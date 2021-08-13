@@ -1,0 +1,291 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    font-family: 'Cormorant', serif;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.clearfloat {
+    clear: both;
+}
+
+/* Styling for header */
+#find {
+    padding-top: 200px;
+}
+.logo img {
+    height: 50px;
+    width: auto;
+    margin: 50px 0 0 120px;
+
+}
+
+.etsy {
+    margin-top: 60px;
+    margin-right: 50px;
+}
+a.etsy-btn{
+    background: none;
+    border: 1.2px solid #000;
+    border-radius: 9px;
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    font-size: .8em;
+}
+
+a.etsy-btn:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+a.etsy-btn:hover {
+    color: #d4af37;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    padding-bottom: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Styling for menu */
+
+li > a {
+    text-decoration: none ;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+li > a:hover {
+    color: #d4af37;
+}
+
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1; 
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+#menuToggle ul {
+    height: 800px;
+}
+
+#menuToggle li {
+    margin-top: 10px;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-top: 5px;
+    position: relative;
+
+    background: #181818;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), 
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+
+/* Crossmark Time */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    /* Shouldnt I be calling out the 2nd span instead of the 3rd? */
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+/* Making it absolute position at top of the screen */
+#menu {
+    display: block !important; 
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #434343d4;
+    list-style-type: none;
+
+    -webkit-font-smoothing: antialiased;
+    /* Stop safari flickering */
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+
+/* Styles for the footer */
+footer {
+    background-color: #000;
+    color: #DBC54E;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    padding-top: 2px;
+    font-size: .8em;
+    font-weight:600;
+    margin-top: 40px;
+}
+
+/* SLIDER Stylingggggggg */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}

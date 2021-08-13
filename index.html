@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HAUS</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant:700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="keywords" content="HAUS, HTML5, CSS3, Web Publishing, ITP104, Interior Design, Custom Furniture">
+        <meta name="description" content="We an interior design team with a passion for beautiful, handcrafted furniture.">
+        <style>
+            #menu {
+                display: none;
+            }
+            /* Main styling */
+            main {
+                margin-top: 139px;
+            }
+            #main-image {
+                background-image: url("images/kitchen2.jpeg");
+                background-size: cover;
+                background-position: center;
+                height: 550px;
+            }
+
+            #main-image h1 {
+                text-align: center;
+                color: #fff;
+                margin: 0px;
+                font-size: 3em;
+                /* text-shadow: 0 0 3px #212121;  */
+                font-weight: 600;
+            }
+
+            .scroll {
+                width: 200px;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .scroll img {
+                width: 30px;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+
+            .scroll-box p {
+                margin-top: 25px;
+                margin-bottom: 5px;
+            }
+
+            .scroll-box a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            .scroll-box a:hover {
+                color: #d4af37;
+            }
+            /* Styling of Product Section */
+            #product-section{
+                display: flex;
+                width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 80px;
+                justify-content: space-between;
+            }
+            .box1 {
+                display: flex;
+                flex-direction: column;
+                width: 390px;
+            }
+            .box1 .img-box1 {
+                background-image: url("images/livingroom.png");
+                width: 390px;
+                height: 400px;
+                background-position: left;
+            }
+
+            .box1 .text-box1 h2 {
+                margin-bottom: 5px;
+                text-align: center;
+            }
+            .box1 .text-box1 p {
+                margin-top: 0px;
+                text-align: center;
+            }
+
+            .box2 {
+                display: flex;
+                flex-direction: column;
+                width: 390px;
+
+            }
+            .box2 .img-box2 {
+                background-image: url("images/bedroom.png");
+                width: 390px;
+                height: 400px;
+                background-position: left;
+            }
+            .box2 .text-box2 h2 {
+                margin-bottom: 5px;
+                text-align: center;
+            }
+            .box2 .text-box2 p {
+                margin-top: 0px;
+                text-align: center;
+            }
+
+            .box3 {
+                display: flex;
+                flex-direction: column;
+                width: 390px;
+
+            }
+            .box3 .img-box3 {
+                background-image: url("images/table.png");
+                width: 390px;
+                height: 400px;
+                background-position: left;
+            }
+            .box3 .text-box3 h2 {
+                margin-bottom: 5px;
+                text-align: center;
+            }
+            .box3 .text-box3 p {
+                margin-top: 0px;
+                text-align: center;
+            }
+
+            /* Styling for about section */
+            .about {
+                background-color: #f4f4f4;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                margin-top: 40px;
+            }
+            .about-box {
+                display: flex;
+                width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .about-text {
+                width: 600px;
+                height: auto;
+                padding-top:50px;
+
+            }
+            .about-text h2 {
+                font-size: 3em;
+                margin-bottom: 0px;
+            }
+            .about-text p {
+                font-size: 1.3em;
+                margin-bottom: 50px;
+                padding-right: 80px;
+                line-height: 1.5;
+                font-weight: 600;
+            }
+            .about-text a {
+                margin-top: 50px;
+                padding: 10px 18px;
+                border: 1.2px solid #000;
+                border-radius: 9px;
+                text-decoration: none;
+                font-size: .8em;
+            }
+
+            .about-text a:link {
+                text-decoration: none;
+                color: #000;
+            }
+
+            .about-text a:visited {
+                text-decoration: none;
+                color: #000;
+            }
+            .about-text a:hover {
+                color: #d4af37;
+            }
+
+            .about-img {
+                width: 600px;
+                height: auto;
+                box-shadow: 60px -16px #008080;
+            }
+            .btn {
+                width: 100px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            a.product-btn  {
+                margin-top: 50px;
+                padding: 10px 18px;
+                border: 1.2px solid #000;
+                border-radius: 9px;
+                text-decoration: none;
+                font-size: .8em;
+                text-align: center;
+            }
+
+            a.product-btn:link {
+                text-decoration: none;
+                color: #000;
+            }
+            a.product-btn:visited {
+                text-decoration: none;
+                color: #000;
+            }
+            a.product-btn:hover {
+                color: #d4af37;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <nav> 
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product-livingroom.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="logo">
+                <a href="index.html"><img src="images/itp-logo.png" alt="logo"></a>
+            </div>
+
+            <div class="etsy">
+                    <a class="etsy-btn" target="_blank" href="https://www.etsy.com/shop/ArtisanBornCreations?ref=simple-shop-header-name&listing_id=693794367&ga_search_query=modern%20furniture">SHOP ETSY</a>
+            </div>
+        </header>
+
+        <main>
+            <div id="main-image">
+                    <h1 id="find">Find Your Inspiration</h1>
+                    <h1>& Bring it Home</h1>
+            </div>
+            
+            <div class="scroll-box"> 
+                <div class="scroll"> 
+                    <a href="#product-section"><p>Explore Products</p></a>
+                    <a href="#product-section"><img src="images/arrow.png" alt="down arrow"></a>
+                </div>
+            </div>
+
+            <!-- Product Section -->
+            <div id="product-section">
+                <div class="box1"> <!--ADD FLEX-->
+                    <a href="product-livingroom.html"><div class="img-box1"></div></a><!--This div has a set width for the image-->
+                    <div class="text-box1"><!--This div has width for text to live inside of it-->
+                        <h2>Living Room</h2>
+                        <p>Find your living room essentials here!</p>
+                        <div class="btn">
+                            <a class="product-btn" href="product-livingroom.html">Learn More</a>
+                        </div>
+                    </div><!--This div has width for text to live inside of it-->
+                </div>
+
+                <div class="box2">
+                    <a href="product-bedroom.html"><div class="img-box2"></div></a> <!--This div has a set width for the image-->
+                    <div class="text-box2"><!--This div has width for text to live inside of it-->
+                        <h2>Bedroom</h2>
+                        <p>Find your beloved piece for your bedroom.</p>
+                        <div class="btn">
+                            <a class="product-btn" href="product-bedroom.html">Learn More</a>
+                        </div>
+                    </div><!--This div has width for text to live inside of it-->
+
+                </div>  
+
+                <div class="box3">
+                   <a href="product-diningroom.html"><div class="img-box3"></div></a><!--This div has a set width for the image-->
+                    <div class="text-box3"><!--This div has width for text to live inside of it-->
+                        <h2>Dining Room</h2>
+                        <p>Custom made furniture made for your aesthetic.</p>
+                        <div class="btn">
+                            <a class="product-btn"  href="product-diningroom.html">Learn More</a>
+                        </div>
+                    </div><!--This div has width for text to live inside of it-->   
+                </div>
+
+            </div>
+        </main>
+
+
+        <section>
+            <div class="about">
+                <div class="about-box">
+                    <div class="about-text">
+                        <h2>About HAUS</h2>
+                        <p>We an an interior design team with a passion for beautiful, handcrafted furniture. </p>
+                        <a href="about.html">Learn More</a>
+                    </div>
+
+                    <div class="about-img"> 
+                        <img src="images/about2.jpeg" alt="Our building">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+                <p>HAUS &copy;</p>
+        </footer>
+
+
+    </body>
+</html>

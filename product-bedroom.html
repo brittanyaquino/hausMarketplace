@@ -1,0 +1,978 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>Bedroom</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant:700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="keywords" content="HAUS, HTML5, CSS3, Web Publishing, ITP104, Interior Design, Custom Furniture">
+        <meta name="description" content="We an interior design team with a passion for beautiful, handcrafted furniture.">
+        <style>
+            #menu {
+                display: none;
+            }
+            /* Main styling */
+            main {
+                margin-top: 139px;
+            }
+            #main-image {
+                background-image: url("images/bed3.jpeg");
+                background-size: cover;
+                background-position: center;
+                height: 400px;
+            }
+
+            #main-image h1 {
+                color: #fff;
+                font-size: 3em;
+                /* text-shadow: 0 0 3px #212121;  */
+                font-weight: 600;
+                text-align: left;
+                margin: 0px 0px 10px 60px;
+                padding-top: 200px;
+            }
+            #main-image h2 {
+                color: #fff;
+                font-weight: 600;
+                text-align: left;
+                margin: 0px 0px 10px 60px;
+            }
+
+             /* Styling for the products menu */
+             #nav #active {
+                color: #d4af37;
+                border-bottom: 2px solid #d4af37;
+            }
+            #navbar {
+                box-shadow: 0px 2px 5px #ccc;
+                margin-bottom: 20px;
+            }
+            #nav {
+                width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #nav a {
+                color: #000;
+                text-decoration: none;
+                width: 200px;
+                height: 50px;
+                line-height: 50px;
+                display: block;
+                float: left;
+                text-align: center;
+                border-bottom: 2px solid #fff;
+            }
+            #nav a:hover {
+                color: #d4af37;
+                border-bottom: 2px solid #d4af37;
+            }
+
+             /* INTRODUCTION of bedroom section */
+             .intro {
+                width: 800px;
+                text-align: center;
+                margin: 60px auto 80px auto;
+            }
+
+            .intro h2 {
+                font-weight: 800;
+                font-size: 2.8em;
+                margin: 5px 0px 10px 0px;
+            }
+            .intro h4 {
+                margin-bottom: 10px;
+            }
+            .intro p {
+                line-height: 2em;
+            }
+
+            /* Styling for the first Section for the Gallery */
+            #furniture-section {
+                display: flex;
+                width: 1300px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: space-between;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                flex-wrap: wrap;
+            }
+
+            .box1 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+
+            .box1 .img-box1 {
+                background-image: url("images/bed15.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .box1 .text-box1 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+
+            .box1 .text-box1 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box1 .text-box1 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+
+            .box2 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box2  .img-box2 {
+                background-image: url("images/bed3.1.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .box2 .text-box2 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+
+            .box2 .text-box2 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box2 .text-box2 .stars {
+                width: 80px;
+                height: auto;
+            }
+
+            .box3 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box3 .img-box3 {
+                background-image: url("images/bed10.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+            .box3 .text-box3 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .box3 .text-box3 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box3 .text-box3 .stars {
+                width: 80px;
+                height: auto;
+            }
+
+            .box4 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box4 .img-box4 {
+                background-image: url("images/bed14.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .box4 .text-box4 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .box4 .text-box4 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box4 .text-box4 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .box5 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box5 .img-box5 {
+                background-image: url("images/bed4.1.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .box5 .text-box5 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .box5 .text-box5 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box5 .text-box5 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .box6 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box6 .img-box6 {
+                background-image: url("images/bed5.6.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .box6 .text-box6 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .box6 .text-box6 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box6 .text-box6 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .box7 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box7 .img-box7 {
+                background-image: url("images/bed12.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .box7 .text-box7 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .box7 .text-box7 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box7 .text-box7 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .box8 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box8 .img-box8 {
+                background-image: url("images/bed5.4.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .box8 .text-box8 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .box8 .text-box8 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box8 .text-box8 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            /* Night Stand Section */
+            .border {
+                width: 1200px;
+                border-bottom: 1px solid #ccc;
+                margin: 10px auto 10px auto;
+
+            }
+            .info{
+                width: 800px;
+                text-align: center;
+                margin: 50px auto 50px auto;
+            }
+            .info h3 {
+                font-weight: 800;
+                font-size: 2em;
+                margin: 5px 0px 0px 0px;
+            }
+
+            #nightstands {
+                display: flex;
+                width: 1300px;
+                margin: 50px auto 0px auto;
+                justify-content: space-between;
+                
+            }
+            .stand1 {
+                display: flex;
+                flex-direction: column;
+                width: 420px;
+                margin-bottom: 50px;
+            }
+            .stand1 .img-stand1 {
+                background-image: url("images/nightstand4.jpg");
+                width: 420px;
+                height: 530px;
+                background-position: center;
+            }
+            .stand1 .text-stand1 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .stand1 .text-stand1 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .stand1 .text-stand1 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .stand2 {
+                display: flex;
+                flex-direction: column;
+                width: 420px;
+                margin-bottom: 50px;
+            }
+            .stand2 .img-stand2 {
+                background-image: url("images/nightstand2.jpg");
+                width: 420px;
+                height: 530px;
+                background-position: center;
+            }
+            .stand2 .text-stand2 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .stand2 .text-stand2 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .stand2 .text-stand2 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .stand3 {
+                display: flex;
+                flex-direction: column;
+                width: 420px;
+                margin-bottom: 50px;
+            }
+            .stand3 .img-stand3 {
+                background-image: url("images/nightstand5.jpg");
+                width: 420px;
+                height: 530px;
+                background-position: center;
+            }
+            .stand3 .text-stand3 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .stand3 .text-stand3 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .stand3 .text-stand3 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+
+            /* BENCH SECTIONNNNNN */
+            #benches {
+                display: flex;
+                width: 1300px;
+                margin: 50px auto 0px auto;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                
+            }
+            .bench1 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+            .bench1 .img-bench1 {
+                background-image: url("images/bench7.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+            .bench1 .text-bench1 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .bench1 .text-bench1 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .bench1 .text-bench1 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .bench2 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+            .bench2 .img-bench2 {
+                background-image: url("images/bench4.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+            .bench2 .text-bench2 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .bench2 .text-bench2 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .bench2 .text-bench2 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .bench3 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+            .bench3 .img-bench3 {
+                background-image: url("images/bench1.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+            .bench3 .text-bench3 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .bench3 .text-bench3 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .bench3 .text-bench3 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .bench4 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+            .bench4 .img-bench4 {
+                background-image: url("images/bench2.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+            .bench4 .text-bench4 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .bench4 .text-bench4 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .bench4 .text-bench4 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .bench5 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+            .bench5 .img-bench5 {
+                background-image: url("images/bench6.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+            .bench5 .text-bench5 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .bench5 .text-bench5 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .bench5 .text-bench5 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .bench6 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+            .bench6 .img-bench6 {
+                background-image: url("images/bench13.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+            .bench6 .text-bench6 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .bench6 .text-bench6 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .bench6 .text-bench6 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .bench7 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+            .bench7 .img-bench7 {
+                background-image: url("images/bench12.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+            .bench7 .text-bench7 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .bench7 .text-bench7 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .bench7 .text-bench7 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .bench8 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+            .bench8 .img-bench8 {
+                background-image: url("images/bench14.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+            .bench8 .text-bench8 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .bench8 .text-bench8 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .bench8 .text-bench8 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+
+        </style>
+    </head> 
+
+    <body>
+        <header>
+            <nav> 
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product-livingroom.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="logo">
+                <a href="index.html"><img src="images/itp-logo.png" alt="logo"></a>
+            </div>
+
+            <div class="etsy">
+                <a class="etsy-btn" target="_blank" href="https://www.etsy.com/shop/ArtisanBornCreations?ref=simple-shop-header-name&listing_id=693794367&ga_search_query=modern%20furniture">SHOP ETSY</a>
+            </div>
+        </header>
+
+        <main>
+            <div id="main-image">
+                    <h1>Spring Collection</h1>
+                    <h2>Functional Living</h2>
+            </div>
+        </main>
+
+        <div id="navbar">
+            <div id="nav">
+                <a href="product-livingroom.html">Living Room</a>
+                <a id="active" href="product-bedroom.html">Bedroom</a>
+                <a href="product-diningroom.html">Dining Room</a>
+
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+
+        <!-- INTRODUCTION Section for product -->
+        <div class="intro"> 
+                <h4>BEDROOM</h4>
+                <h2>The Dream Collection</h2>
+                <p>Every furniture piece built carefully, lasting you for years. With the style that you will love for years to come. From the studieness of your bedframe to the colors and texures surrounding your santurary, we promise to bring your dreams into life.</p>
+        </div>
+
+        <!--First Section for the Gallery -->
+        <div id="furniture-section">
+            <div class="box1">
+                <div class="img-box1"></div>
+                <div class="text-box1">
+                    <h3>Fleetwood</h3>
+                    <p>Low Wood Bed</p>
+                    <p>$1249.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="img-box2"></div>
+                <div class="text-box2">
+                    <h3>Gannon</h3>
+                    <p>Tree-Markings Bed</p>
+                    <p>$2259.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="box3">
+                <div class="img-box3"></div>
+                <div class="text-box3">
+                    <h3>Arrington</h3>
+                    <p>Low Drawer Bed</p>
+                    <p>$1359.99</p>
+                    <img class="stars" src="images/four.png" alt="four out of five golden stars">
+                </div>
+            </div>
+
+            <div class="box4">
+                <div class="img-box4"></div>
+                <div class="text-box4">
+                    <h3>Brinkmann</h3>
+                    <p>Simple Modern Bed</p>
+                    <p>$1579.99</p>
+                    <img class="stars" src="images/fourandhalf.png" alt="four and a halfout of five golden stars">
+                </div>
+            </div>
+
+            <div class="box5">
+                <div class="img-box5"></div>
+                <div class="text-box5">
+                    <h3>Bozzelli</h3>
+                    <p>Grey Bed</p>
+                    <p>$1764.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="box6">
+                <div class="img-box6"></div>
+                <div class="text-box6">
+                    <h3>Denver</h3>
+                    <p>Panels Wood Bed</p>
+                    <p>$2249.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="box7">
+                <div class="img-box7"></div>
+                <div class="text-box7">
+                    <h3>Evert</h3>
+                    <p>Wood Bed</p>
+                    <p>$1242.99</p>
+                    <img class="stars" src="images/four.png" alt="four out of five golden stars">
+                </div>
+            </div>
+
+            <div class="box8">
+                <div class="img-box8"></div>
+                <div class="text-box8">
+                    <h3>Finch</h3>
+                    <p>Tall Wood Bed</p>
+                    <p>$1249.90</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border"></div>
+        <!--Second Section for the Gallery -->
+        <div class="info"> 
+                <h3>Night Stands</h3>
+                <p>Bringing light into your world of comfort.</p>
+        </div>
+
+        <div id="nightstands">
+            <div class="stand1">
+                <div class="img-stand1"></div>
+                <div class="text-stand1">
+                    <h3>Goulding</h3>
+                    <p>Wooden Night Stand</p>
+                    <p>$349.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="stand2">
+                <div class="img-stand2"></div>
+                <div class="text-stand2">
+                    <h3>Attard</h3>
+                    <p>Grey Night Stand</p>
+                    <p>$269.99</p>
+                    <img class="stars" src="images/four.png" alt="four out of five golden stars">
+                </div>
+            </div>
+
+            <div class="stand3">
+                <div class="img-stand3"></div>
+                <div class="text-stand3">
+                    <h3>Husher</h3>
+                    <p>Simple Wooden Night Stand</p>
+                    <p>$200.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+        </div>
+
+        <div class="border"></div>
+
+        <!--Third Section for the Gallery -->
+        <div class="info"> 
+                <h3>End of Bed</h3>
+                <p>Add a handmade bench to your spacee for that finishing touch.</p>
+        </div>
+        
+        <div id="benches">
+            <div class="bench1">
+                <div class="img-bench1"></div>
+                <div class="text-bench1">
+                    <h3>Ibach</h3>
+                    <p>Wood and Steel End of Bed Bench</p>
+                    <p>$567.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="bench2">
+                <div class="img-bench2"></div>
+                <div class="text-bench2">
+                    <h3>Jishu</h3>
+                    <p>Lightened Wooden Bench</p>
+                    <p>$489.99</p>
+                    <img class="stars" src="images/four.png" alt="four out of five golden stars">
+                </div>
+            </div>
+
+            <div class="bench3">
+                <div class="img-bench3"></div>
+                <div class="text-bench3">
+                    <h3>Dawnlight</h3>
+                    <p>Steel End of Bed Bench</p>
+                    <p>$349.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="bench4">
+                <div class="img-bench4"></div>
+                <div class="text-bench4">
+                    <h3>Benton</h3>
+                    <p>Dark Grey Bench</p>
+                    <p>$579.99</p>
+                    <img class="stars" src="images/fourandhalf.png" alt="four and a half out of five golden stars">
+                </div>
+            </div>
+
+            <div class="bench5">
+                <div class="img-bench5"></div>
+                <div class="text-bench5">
+                    <h3>Lombardo</h3>
+                    <p>Wooden Coffe Table</p>
+                    <p>$249.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="bench6">
+                <div class="img-bench6"></div>
+                <div class="text-bench6">
+                    <h3>Moreau</h3>
+                    <p>Cushioned Wooden Bench</p>
+                    <p>$389.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="bench7">
+                <div class="img-bench7"></div>
+                <div class="text-bench7">
+                    <h3>Litvak</h3>
+                    <p>Soft End of Bed Bench</p>
+                    <p>$445.99</p>
+                    <img class="stars" src="images/four.png" alt="four out of five golden stars">
+                </div>
+            </div>
+
+            <div class="bench8">
+                <div class="img-bench8"></div>
+                <div class="text-bench8">
+                    <h3>Nolan</h3>
+                    <p>Light Bench</p>
+                    <p>$149.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+    
+        </div>
+        <div class="border"></div>
+
+        <!--Fourth Section for the Gallery -->
+
+        <div class="info"> 
+                <h3>Exlusive Bedrooms</h3>
+                <p>Take a look at the past work our talemted interior designers have done.  <br> See something you like? Give us a call!</p>
+        </div>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/bedroom1.jpg" alt="Large blue-tone bedroom" style="width:100%">
+            <div class="text">Majestic Blue Room</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/bedroom2.jpg" alt="Large wooden bedroom overlooking a lake" style="width:100%">
+            <div class="text">Wood Work</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/bedroom3.jpg" alt="Modern penthouse bedroom" style="width:100%">
+            <div class="text">Modern Penthouse</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        
+
+        <footer>
+            <p>HAUS &copy;</p>
+        </footer>   
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+    
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+
+    </body>
+
+
+</html>

@@ -1,0 +1,1183 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>Dining Room</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant:700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="keywords" content="HAUS, HTML5, CSS3, Web Publishing, ITP104, Interior Design, Custom Furniture">
+        <meta name="description" content="We an interior design team with a passion for beautiful, handcrafted furniture.">
+        <style>
+            #menu {
+                display: none;
+            }
+            /* Main styling */
+            main {
+                margin-top: 139px;
+            }
+            #main-image {
+                background-image: url("images/kitchen.jpeg");
+                background-size: cover;
+                background-position: center;
+                height: 400px;
+            }
+
+            #main-image h1 {
+                color: #fff;
+                font-size: 3em;
+                /* text-shadow: 0 0 3px #212121;  */
+                font-weight: 600;
+                text-align: left;
+                margin: 0px 0px 10px 60px;
+                padding-top: 200px;
+            }
+            #main-image h2 {
+                color: #fff;
+                font-weight: 600;
+                text-align: left;
+                margin: 0px 0px 10px 60px;
+            }
+
+             /* Styling for the products menu */
+             #nav #active {
+                color: #d4af37;
+                border-bottom: 2px solid #d4af37;
+            }
+            #navbar {
+                box-shadow: 0px 2px 5px #ccc;
+                margin-bottom: 20px;
+            }
+            #nav {
+                width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #nav a {
+                color: #000;
+                text-decoration: none;
+                width: 200px;
+                height: 50px;
+                line-height: 50px;
+                display: block;
+                float: left;
+                text-align: center;
+                border-bottom: 2px solid #fff;
+            }
+            #nav a:hover {
+                color: #d4af37;
+                border-bottom: 2px solid #d4af37;
+            }
+
+             /* INTRODUCTION of dining room section */
+             .intro {
+                width: 800px;
+                text-align: center;
+                margin: 60px auto 80px auto;
+            }
+
+            .intro h2 {
+                font-weight: 800;
+                font-size: 2.8em;
+                margin: 5px 0px 10px 0px;
+            }
+            .intro h4 {
+                margin-bottom: 10px;
+            }
+
+            .intro p {
+                line-height: 2em;
+            }
+
+            /* Styling for the first Section for the Gallery */
+            #furniture-section {
+                display: flex;
+                width: 1300px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: space-between;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                flex-wrap: wrap;
+            }
+
+            .box1 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+
+            .box1 .img-box1 {
+                background-image: url("images/table7.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .box1 .text-box1 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+
+            .box1 .text-box1 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box1 .text-box1 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+
+            .box2 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box2  .img-box2 {
+                background-image: url("images/table9.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .box2 .text-box2 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+
+            .box2 .text-box2 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box2 .text-box2 .stars {
+                width: 80px;
+                height: auto;
+            }
+
+            .box3 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box3 .img-box3 {
+                background-image: url("images/table1.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+            .box3 .text-box3 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .box3 .text-box3 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box3 .text-box3 .stars {
+                width: 80px;
+                height: auto;
+            }
+
+            .box4 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box4 .img-box4 {
+                background-image: url("images/table1.jpeg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .box4 .text-box4 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .box4 .text-box4 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box4 .text-box4 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .box5 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box5 .img-box5 {
+                background-image: url("images/table3.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: bottom;
+            }
+
+            .box5 .text-box5 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .box5 .text-box5 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box5 .text-box5 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .box6 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box6 .img-box6 {
+                background-image: url("images/table2.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: bottom;
+            }
+
+            .box6 .text-box6 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .box6 .text-box6 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box6 .text-box6 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .box7 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box7 .img-box7 {
+                background-image: url("images/table2.jpeg");
+                width: 320px;
+                height: 350px;
+                background-position: bottom;
+            }
+
+            .box7 .text-box7 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .box7 .text-box7 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box7 .text-box7 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .box8 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .box8 .img-box8 {
+                background-image: url("images/table10.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .box8 .text-box8 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .box8 .text-box8 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .box8 .text-box8 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .border {
+                width: 1200px;
+                border-bottom: 1px solid #ccc;
+                margin: 10px auto 10px auto;
+
+            }
+            .info{
+                width: 800px;
+                text-align: center;
+                margin: 50px auto 50px auto;
+            }
+            .info h3 {
+                font-weight: 800;
+                font-size: 2em;
+                margin: 5px 0px 0px 0px;
+            }
+            /* Styling for the SECOND Section for the Gallery */
+            #tops {
+                display: flex;
+                width: 1300px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: space-between;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                flex-wrap: wrap;
+            }
+
+            .top1 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+
+            .top1 .img-top1 {
+                background-image: url("images/countertop4.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .top1 .text-top1 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+
+            .top1 .text-top1 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .top1 .text-top1 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+
+            .top2 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .top2  .img-top2 {
+                background-image: url("images/countertop2.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .top2 .text-top2 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+
+            .top2 .text-top2 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .top2 .text-top2 .stars {
+                width: 80px;
+                height: auto;
+            }
+
+            .top3 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .top3 .img-top3 {
+                background-image: url("images/countertop8.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+            .top3 .text-top3 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .top3 .text-top3 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .top3 .text-top3 .stars {
+                width: 80px;
+                height: auto;
+            }
+
+            .top4 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .top4 .img-top4 {
+                background-image: url("images/countertop3.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .top4 .text-top4 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .top4 .text-top4 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .top4 .text-top4 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .top5 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .top5 .img-top5 {
+                background-image: url("images/countertop10.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .top5 .text-top5 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .top5 .text-top5 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .top5 .text-top5 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .top6 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .top6 .img-top6 {
+                background-image: url("images/countertop12.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .top6 .text-top6 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .top6 .text-top6 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .top6 .text-top6 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .top7 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .top7 .img-top7 {
+                background-image: url("images/countertop9.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .top7 .text-top7 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .top7 .text-top7 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .top7 .text-top7 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+            .top8 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+            }
+
+            .top8 .img-top8 {
+                background-image: url("images/countertop7.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .top8 .text-top8 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            
+            .top8 .text-top8 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .top8 .text-top8 .stars {
+                width: 80px;
+                height: auto ;
+            }
+
+             /* Styling for the SECOND Section for the Gallery */
+            #lamps {
+                display: flex;
+                width: 1300px;
+                margin: 50px auto 0px auto;
+                justify-content: space-between;
+                
+            }
+            .lamp1 {
+                display: flex;
+                flex-direction: column;
+                width: 420px;
+                margin-bottom: 50px;
+            }
+            .lamp1 .img-lamp1 {
+                background-image: url("images/light7.jpg");
+                width: 420px;
+                height: 530px;
+                background-position: center;
+            }
+            .lamp1 .text-lamp1 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .lamp1 .text-lamp1 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .lamp1 .text-lamp1 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .lamp2 {
+                display: flex;
+                flex-direction: column;
+                width: 420px;
+                margin-bottom: 50px;
+            }
+            .lamp2 .img-lamp2 {
+                background-image: url("images/light3.jpg");
+                width: 420px;
+                height: 530px;
+                background-position: top;
+            }
+            .lamp2 .text-lamp2 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .lamp2 .text-lamp2 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .lamp2 .text-lamp2 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .lamp3 {
+                display: flex;
+                flex-direction: column;
+                width: 420px;
+                margin-bottom: 50px;
+            }
+            .lamp3 .img-lamp3 {
+                background-image: url("images/light8.jpg");
+                width: 420px;
+                height: 530px;
+                background-position: top;
+            }
+            .lamp3 .text-lamp3 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+            .lamp3 .text-lamp3 p {
+                margin: 5px 0px 5px 0px;
+            }
+            .lamp3 .text-lamp3 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            /* Styling for the THIRD Section for the Gallery */
+            #breakfastbars {
+                display: flex;
+                width: 1300px;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: space-between;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                flex-wrap: wrap;
+            }
+
+            .bars1 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+
+            .bar1 .img-bar1 {
+                background-image: url("images/bar4.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .bar1 .text-bar1 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+
+            .bar1 .text-bar1 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .bar1 .text-bar1 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .bars2 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+
+            .bar2 .img-bar2 {
+                background-image: url("images/bar8.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .bar2 .text-bar2 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+
+            .bar2 .text-bar2 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .bar2 .text-bar2 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .bars3 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+
+            .bar3 .img-bar3 {
+                background-image: url("images/bar14.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .bar3 .text-bar3 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+
+            .bar3 .text-bar3 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .bar3 .text-bar3 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+            .bars4 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin-bottom: 50px;
+            }
+
+            .bar4 .img-bar4 {
+                background-image: url("images/bar9.jpg");
+                width: 320px;
+                height: 350px;
+                background-position: center;
+            }
+
+            .bar4 .text-bar4 h3 {
+                margin: 15px 0px 5px 0px;
+                font-size: 1.8em;
+                font-weight: 800;
+            }
+
+            .bar4 .text-bar4 p {
+                margin: 5px 0px 5px 0px;
+            }
+
+            .bar4 .text-bar4 .stars{ 
+                width: 80px;
+                height: auto;
+            }
+
+        </style>
+    </head> 
+
+    <body>
+        <header>
+            <nav> 
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product-livingroom.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="logo">
+                <a href="index.html"><img src="images/itp-logo.png" alt="logo"></a>
+            </div>
+
+            <div class="etsy">
+                <a class="etsy-btn" target="_blank" href="https://www.etsy.com/shop/ArtisanBornCreations?ref=simple-shop-header-name&listing_id=693794367&ga_search_query=modern%20furniture">SHOP ETSY</a>
+            </div>
+        </header>
+
+        <main>
+            <div id="main-image">
+                    <h1>Spring Collection</h1>
+                    <h2>Functional Living</h2>
+            </div>
+        </main>
+
+        <div id="navbar">
+            <div id="nav">
+                <a href="product-livingroom.html">Living Room</a>
+                <a href="product-bedroom.html">Bedroom</a>
+                <a id="active" href="product-diningroom.html">Dining Room</a>
+
+                <div class="clearfloat"></div>
+            </div>
+        </div>
+
+        <!-- INTRODUCTION Section for product -->
+        <div class="intro"> 
+                <h4>DINING ROOM</h4>
+                <h2>The Dining Collection</h2>
+                <p>Enjoy dinner with your favorite people surrounding your custom made wooden table. Build the aura of your dining room with the warmth that our pieces bring to you and your guests. Having the freedom to choose your design is as beautiful and creating memories over a meal. </p>
+        </div>
+
+
+        <!--First Section for the Gallery -->
+        <div id="furniture-section">
+            <div class="box1">
+                <div class="img-box1"></div>
+                <div class="text-box1">
+                    <h3>Lacroix</h3>
+                    <p>Naturally Light Wood</p>
+                    <p>$1249.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="box2">
+                <div class="img-box2"></div>
+                <div class="text-box2">
+                    <h3>Nectar</h3>
+                    <p>White Wooden Table</p>
+                    <p>$2247.99</p>
+                    <img class="stars" src="images/four.png" alt="four out of five golden stars">
+                </div>
+            </div>
+
+            <div class="box3">
+                <div class="img-box3"></div>
+                <div class="text-box3">
+                    <h3>Quinn</h3>
+                    <p>Dark Wooden Table</p>
+                    <p>$3289.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="box4">
+                <div class="img-box4"></div>
+                <div class="text-box4">
+                    <h3>Matisse</h3>
+                    <p>Auborn Table</p>
+                    <p>$1349.99</p>
+                    <img class="stars" src="images/fourandhalf.png" alt="four and a half out of five golden stars">
+                </div>
+            </div>   
+            
+            <div class="box5">
+                <div class="img-box5"></div>
+                <div class="text-box5">
+                    <h3>Palmer</h3>
+                    <p>Dark Circular Wooden Table</p>
+                    <p>$1249.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="box6">
+                <div class="img-box6"></div>
+                <div class="text-box6">
+                    <h3>Asterio</h3>
+                    <p>Circular Light Wooden Table</p>
+                    <p>1349.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="box7">
+                <div class="img-box7"></div>
+                <div class="text-box7">
+                    <h3>Lattimore</h3>
+                    <p>Light Circular Wooden Table</p>
+                    <p>$1049.99</p>
+                    <img class="stars" src="images/four.png" alt="four out of five golden stars">
+                </div>
+            </div>
+
+            <div class="box8">
+                <div class="img-box8"></div>
+                <div class="text-box8">
+                    <h3>Adair</h3>
+                    <p>Short Circular Wooden Table</p>
+                    <p>$1149.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="border"></div>
+        <!--SECOND Section for the Gallery -->
+
+        <div class="info"> 
+                <h3>Countertops + Cabinets</h3>
+                <p>Building the kitcken of your dreams.</p>
+        </div>
+
+        <div id="tops">
+            <div class="top1">
+                <div class="img-top1"></div>
+                <div class="text-top1">
+                    <h3>Akuna</h3>
+                    <p>Black Cabinets and Marble Top</p>
+                    <p>$2287.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="top2">
+                <div class="img-top2"></div>
+                <div class="text-top2">
+                    <h3>Liston</h3>
+                    <p>Clean Light Counter Top</p>
+                    <p>$2445.99</p>
+                    <img class="stars" src="images/four.png" alt="four out of five golden stars">
+                </div>
+            </div>
+
+            <div class="top3">
+                <div class="img-top3"></div>
+                <div class="text-top3">
+                    <h3>Kerrigan</h3>
+                    <p>Granite Counter Top and White Cabinets</p>
+                    <p>$3239.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="top4">
+                <div class="img-top4"></div>
+                <div class="text-top4">
+                    <h3>Lichter</h3>
+                    <p>White Cabinets and White Counter Tops</p>
+                    <p>$2249.99</p>
+                    <img class="stars" src="images/fourandhalf.png" alt="four and a half out of five golden stars">
+                </div>
+            </div>
+
+            <div class="top5">
+                <div class="img-top5"></div>
+                <div class="text-top5">
+                    <h3>Moffette</h3>
+                    <p>Black Counter Tops and White Cabinets</p>
+                    <p>$1549.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="top6">
+                <div class="img-top6"></div>
+                <div class="text-top6">
+                    <h3>Sasai</h3>
+                    <p>White Countertop and Brown Cabinets</p>
+                    <p>$1437.99</p>
+                    <img class="stars" src="images/four.png" alt="four out of five golden stars">
+                </div>
+            </div>
+
+            <div class="top7">
+                <div class="img-top7"></div>
+                <div class="text-top7">
+                    <h3>Voight</h3>
+                    <p>Dark Green Cabinets and Marble Counter Tops</p>
+                    <p>$2339.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="top8">
+                <div class="img-top8"></div>
+                <div class="text-top8">
+                    <h3>Urtz</h3>
+                    <p>White Counter Tops and Blue Cabinets</p>
+                    <p>$3249.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="border"></div>
+        <!--THIRD Section for the Gallery -->
+        <div class="info"> 
+                <h3>Lighting</h3>
+                <p>Custom lighting to fit your taste.</p>
+        </div>
+        <div id="lamps">
+            <div class="lamp1">
+                <div class="img-lamp1"></div>
+                <div class="text-lamp1">
+                    <h3>Tabrizi</h3>
+                    <p>Golden Lighting</p>
+                    <p>$249.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="lamp2">
+                <div class="img-lamp2"></div>
+                <div class="text-lamp2">
+                    <h3>Sutton</h3>
+                    <p>Black Steel Lamps</p>
+                    <p>$374.99</p>
+                    <img class="stars" src="images/four.png" alt="four out of five golden stars">
+                </div>
+            </div>
+
+            <div class="lamp3">
+                <div class="img-lamp3"></div>
+                <div class="text-lamp3">
+                    <h3>Boulware</h3>
+                    <p>Black and Gold Lamps</p>
+                    <p>$198.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+    
+        </div>
+        <div class="border"></div>
+
+        <!--Fourth Section for the Gallery -->
+
+        <div class="info"> 
+                <h3>Breakfast Bar</h3>
+                <p>Make this breakfast bar an important part of your mornings.</p>
+        </div>
+
+        <div id="breakfastbars">
+            <div class="bar1">
+                <div class="img-bar1"></div>
+                <div class="text-bar1">
+                    <h3>Bostwick</h3>
+                    <p>Brown Tall Chairs</p>
+                    <p>$349.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="bar2">
+                <div class="img-bar2"></div>
+                <div class="text-bar2">
+                    <h3>Akuna</h3>
+                    <p>Steel and Wood Chairs</p>
+                    <p>$439.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>
+
+            <div class="bar3">
+                <div class="img-bar3"></div>
+                <div class="text-bar3">
+                    <h3>Liston</h3>
+                    <p>Wooden Stools</p>
+                    <p>$519.99</p>
+                    <img class="stars" src="images/fourandhalf.png" alt="four and a half out of five golden stars">
+                </div>
+            </div>
+
+            <div class="bar4">
+                <div class="img-bar4"></div>
+                <div class="text-bar4">
+                    <h3>Quimbyl</h3>
+                    <p>Grey Soft Chairs</p>
+                    <p>$199.99</p>
+                    <img class="stars" src="images/five.png" alt="five out of five golden stars">
+                </div>
+            </div>    
+        </div>
+        <div class="border"></div>
+
+
+        <!--LAST Section for the Gallery -->
+        <div class="info"> 
+                <h3>Exclusive Dining Rooms</h3>
+                <p>Looking for your perfect dining room or kitchen? <br> Our interior designers make sure to design with you in mind!</p>
+        </div>
+
+         <!-- Slideshow container -->
+         <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="images/kitchen4.jpg" alt="Clean kitchen with white cabinets and steel appliances" style="width:100%">
+            <div class="text">Cocina de Acero</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="images/kitchen5.jpg" alt="Beautiful kitchen with an orange accent color" style="width:100%">
+            <div class="text">Orange Bliss</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="images/kitchen6.jpg" alt="Large kitchen with black cabinets and red dishware" style="width:100%">
+            <div class="text">La Cocina Roja</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        <footer>
+            <p>HAUS &copy;</p>
+        </footer>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+    
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+    
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+    
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+
+    </body>
+
+
+</html>

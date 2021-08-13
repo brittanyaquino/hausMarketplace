@@ -1,0 +1,239 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <title>About</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant:700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="keywords" content="HAUS, HTML5, CSS3, Web Publishing, ITP104, Interior Design, Custom Furniture">
+        <meta name="description" content="We an interior design team with a passion for beautiful, handcrafted furniture.">
+        <style>
+            #menu {
+                display: none;
+            }
+            h1 {
+                font-size: 3em;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            h3 {
+                font-size: 1.5em;
+            }
+            /* Main styling */
+            main {
+                width: 1200px;
+                margin: 200px auto 50px auto;
+            }
+            .line {
+                width: 50px;
+                border-bottom: 1px solid #ccc;
+                margin: 10px auto 10px auto;
+            }
+            .about-text {
+                width: 600px;
+                margin: 50px auto 80px auto;
+                text-align: center;
+            }
+            #about-img {
+                width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .process {
+                background-color: #f7f5e6;
+                padding-top: 20px;
+                padding-bottom: 50px
+            }
+            .process-boxes {
+                width: 1000px;
+                margin: 20px auto;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+            }
+
+            .process-box {
+                width: 190px;
+
+            }
+
+            .process-box img {
+                height: 100px;
+                width: auto;
+            }
+            .services {
+                padding-top: 50px;
+                padding-bottom: 50px;
+
+            }
+            .services-boxes {
+                width: 1000px;
+                margin: 20px auto 50px auto;
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+            .service-box {
+                width: 333px;
+            }
+
+            .service-box img {
+                height: 500px;
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .service-box .extra{
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 30px;
+            }
+
+            .services a {
+                padding: 10px 18px;
+                border: 1.2px solid #000;
+                border-radius: 9px;
+                text-decoration: none;
+                font-size: 1.2em;
+            }
+            .services a:link {
+                text-decoration: none;
+                color: #000;
+            }
+            .services a:visited {
+                text-decoration: none;
+                color: #000;
+            }
+            .services a:hover {
+                color: #000;
+                background-color: #d4af37;
+            }
+
+            
+
+        </style>
+    </head> 
+
+    <body>
+        <header>
+            <nav> 
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product-livingroom.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="logo">
+                <a href="index.html"><img src="images/itp-logo.png" alt="logo"></a>
+            </div>
+
+            <div class="etsy">
+                <a class="etsy-btn" target="_blank" href="https://www.etsy.com/shop/ArtisanBornCreations?ref=simple-shop-header-name&listing_id=693794367&ga_search_query=modern%20furniture">SHOP ETSY</a>
+            </div>
+            </header>
+
+            <main>
+                <div class="about-text">
+                    <h1>About Us</h1>
+                    <div class="line"></div>
+                    <p>We an interior design team with a passion for beautiful, handcrafted furniture.</p>
+                </div>  
+                <div id="about-img">
+                    <img src="images/office.jpg" alt="Picture of an office space">
+                </div>
+                <div class="about-text">
+                    <p> HAUS's mission is to ensure all our clients recieve exceptional and high quality service, product, and experiences. Our goal is to bring out the art of enhancing the interior of your rooms to achieve a more aesthetically environment and experience for your space.</p>
+                </div>
+            </main>
+
+            <div class="process">
+                <div class="about-text">
+                    <h2>Our Process</h2>
+                    <p>We believe in designing the best for our customers.</p>
+                </div>
+                <div class="process-boxes">
+                    <div class="process-box">
+                        <img src="images/icons/bulb.png" alt="created by The Noun Project">
+                        <h3>Ideation</h3>
+                        <p>Let us know your vision and we’ll go from there! </p>
+
+                    </div>
+
+                    <div class="process-box">
+                        <img src="images/icons/design.png" alt="created by Mon Aguilar from The Noun Project">
+                        <h3>Design</h3>
+                        <p>Plan out what your new product will look like. </p>
+                    </div>
+
+                    <div class="process-box">
+                        <img src="images/icons/tools.png" alt="created by  i cons from The Noun Project">
+                        <h3>Production</h3>
+                        <p>Build with the highest quality standard materials. </p>
+
+                    </div>
+
+                    <div class="process-box">
+                        <img src="images/icons/truck.png" alt="created by David from The Noun Project">
+                        <h3>Delivery</h3>
+                        <p>We deliver your product at your doorstep! </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="services"> 
+                    <div class="about-text">
+                        <h2>Our Services</h2>
+                        <p>We can do anything you can dream of!</p>
+
+                    </div>
+
+                    <div class="services-boxes">
+                        <div class="service-box">
+                            <h3 class="extra">Interior <br> Design</h3>
+                            <p class="extra">Our interior designers have gained their experience and expertise all around the world. They bring their taste into every room they touch, while also weaving in your vision to bring you a place that you could never have imagined.  </p>
+
+
+                        </div>
+
+                        <div class="service-box">
+                            <img src="images/plant2.jpg" alt="Picture of a green plant">
+
+                        </div>
+
+                        <div class="service-box">
+                            <h3 class="extra">Custom <br> Furniture</h3>
+                            <p class="extra">Our custom furniture team works tirelessly to build pieces of furniture you will cherish your entire life. They are handcrafted and built with high quality materials to meet your exact needs.</p>
+
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <a href="contact.html">Tell us what you need!</a>
+                    </div>      
+            </div>
+
+            <footer>
+                    <p>HAUS &copy;</p>
+            </footer>
+
+
+    </body>
+
+
+</html>
